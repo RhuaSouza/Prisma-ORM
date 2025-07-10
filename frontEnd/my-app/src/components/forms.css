@@ -1,0 +1,60 @@
+.editing-perfil {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  animation: slideInTop 0.5s ease-in-out forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.editing-perfil input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.editing-perfil input[type="text"]:focus {
+  border-color: #007bff;
+  background-color: #e9f5ff;
+}
+
+.editing-perfil > button {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editing-perfil > button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
